@@ -12,7 +12,7 @@
 
 ---
 
-##  Artificial Intelligence
+##  Artificial Intelligenc
 
 The prediction system is based on:
 
@@ -154,12 +154,12 @@ PHP interfaces: http://localhost/MediConnect/...
 
 Prediction tool: http://localhost:5000
 
- Authors
+## Authors
  
 Younes Boutahir – Bachelor of Software Engineering – FST Errachidia
 
 
- License
+ ## License
  
 Academic project developed as part of the Final Year Project (PFE) — Moulay Ismail University, FST Errachidia, 2025.
 
