@@ -158,9 +158,9 @@ Prediction tool: http://localhost:5000
  
 Younes Boutahir – Bachelor of Software Engineering – FST Errachidia
 
-(Add your teammate's name if applicable)
 
  License
+ 
 Academic project developed as part of the Final Year Project (PFE) — Moulay Ismail University, FST Errachidia, 2025.
 
  Notes
