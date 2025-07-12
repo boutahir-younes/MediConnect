@@ -163,7 +163,7 @@ Younes Boutahir – Bachelor of Software Engineering – FST Errachidia
  
 Academic project developed as part of the Final Year Project (PFE) — Moulay Ismail University, FST Errachidia, 2025.
 
- Notes
+## Notes
  
 CSS is written directly inside the PHP/HTML files.
 
