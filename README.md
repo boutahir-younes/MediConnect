@@ -12,7 +12,7 @@
 
 ---
 
-##  Artificial Intelligenc
+##  Artificial Intelligence
 
 The prediction system is based on:
 
