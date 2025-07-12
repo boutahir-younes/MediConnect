@@ -59,14 +59,23 @@ The model uses a reduced dataset to predict the most likely disease based on sel
 
 est ce que poster tous ca : MediConnect/
 ├── ajouter-medecin.php
+
 ├── ajouter-patient.php
+
 ├── dashboard-admin.php
+
 ├── dashboard-doctor.php
+
 ├── dashboard-patient.php
+
 ├── db_connect.php
+
 ├── dossier_traitement.php
+
 ├── dossiers.php
+
 ├── medecin.php
+
 ├── login.php
 ├── logout.php
 ├── medecins-admin.php
