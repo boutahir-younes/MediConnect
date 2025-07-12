@@ -98,17 +98,7 @@ est ce que poster tous ca : MediConnect/
 │ └── index.html (prediction UI)
 └── README.md
 
-yaml
-Copy
-Edit
 
----
-
-##  How to Run the Project
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/boutahir-younes/MediConnect.git
 Import mediconnect.sql into your MySQL server.
 
 Set your database credentials in db_connect.php.
@@ -127,6 +117,7 @@ PHP interfaces: http://localhost/MediConnect/...
 Prediction tool: http://localhost:5000
 
  Authors
+ 
 Younes Boutahir – Bachelor of Software Engineering – FST Errachidia
 
 (Add your teammate's name if applicable)
@@ -134,18 +125,12 @@ Younes Boutahir – Bachelor of Software Engineering – FST Errachidia
  License
 Academic project developed as part of the Final Year Project (PFE) — Moulay Ismail University, FST Errachidia, 2025.
 
-📌 Notes
+ Notes
+ 
 CSS is written directly inside the PHP/HTML files.
 
 The system is intended to run locally using XAMPP/WAMP and Flask.
 
 The prediction model can be enhanced with richer and validated medical datasets.
 
-yaml
-Copy
-Edit
-
----
-
-Would you like me to generate and send this `README.md` file directly to you (in `.md` f
 
