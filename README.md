@@ -58,54 +58,83 @@ The model uses a reduced dataset to predict the most likely disease based on sel
 ##  Project Structure
 
 est ce que poster tous ca : MediConnect/
-├── ajouter-medecin.php
+├──> ajouter-medecin.php
 
-├── ajouter-patient.php
+├──> ajouter-patient.php
 
-├── dashboard-admin.php
+├──> dashboard-admin.php
 
-├── dashboard-doctor.php
+├──> dashboard-doctor.php
 
-├── dashboard-patient.php
+├──> dashboard-patient.php
 
-├── db_connect.php
+├──> db_connect.php
 
-├── dossier_traitement.php
+├──> dossier_traitement.php
 
-├── dossiers.php
+├──> dossiers.php
 
-├── medecin.php
+├──> medecin.php
 
-├── login.php
-├── logout.php
-├── medecins-admin.php
-├── modifier-medecin.php
-├── modifier-patient.php
-├── patients.php
-├── patients-admin.php
-├── planning.php
-├── profil.php
-├── register.php
-├── rendezvous.php
-├── rendezvous_traitement.php
-├── supprimer-medecin.php
-├── updte_profil.php
-├── index.html (Home page)
-├── script.js
-├── 12 images used across the project
-├── mediconnect.sql
-├── prediction/
-│ ├── main.ipynb
-│ ├── server.py
-│ ├── mlp_model.pkl
-│ ├── encoder.pkl
-│ ├── Data/
-│ │ ├── dataset.csv
-│ │ ├── symptoms.json
-│ │ └── disease_labels.json
-│ └── templates/
-│ └── index.html (prediction UI)
-└── README.md
+├──> login.php
+
+├──> logout.php
+
+├──> medecins-admin.php
+
+├──> modifier-medecin.php
+
+├──> modifier-patient.php
+
+├──> patients.php
+
+├──> patients-admin.php
+
+├──> planning.php
+
+├──> profil.php
+
+├──> register.php
+
+├──> rendezvous.php
+
+├──> rendezvous_traitement.php
+
+├──> supprimer-medecin.php
+
+├──> updte_profil.php
+
+├──> index.html (Home page)
+
+├──> script.js
+
+├──> 12 images used across the project
+
+├──> mediconnect.sql
+
+├──> prediction/
+
+│ ├──> main.ipynb
+
+│ ├──> server.py
+
+│ ├──> mlp_model.pkl
+
+│ ├──> encoder.pkl
+
+│ ├──> Data/
+
+│ │ ├──> dataset.csv
+
+│ │ ├──> symptoms.json
+
+│ │ └──> disease_labels.json
+
+│ └──> templates/
+
+│ └──> index.html (prediction UI)
+
+└──> README.md
 
 
 Import mediconnect.sql into your MySQL server.
