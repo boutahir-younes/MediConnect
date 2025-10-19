@@ -50,8 +50,8 @@ The model uses a reduced dataset to predict the most likely disease based on sel
 |------------------|----------------------------------------------------------------|
 | Frontend         | HTML, CSS (inline in PHP files), basic JS                      |
 | Backend (Web)    | Procedural PHP, MySQL                                          |
-| Backend (ML)     | Python, Flask, Jupyter Notebook                                |
-| Machine Learning | Manually implemented MLP model (no Scikit-learn)               |
+| Backend (DL)     | Python, Flask, Jupyter Notebook                                |
+| Deep Learning | Manually implemented MLP model (no Scikit-learn)               |
 | Database         | MySQL (`mediconnect.sql`)                                      |
 
 ---
@@ -156,7 +156,7 @@ Prediction tool: http://localhost:5000
 
 ## Authors
  
-Younes Boutahir – Bachelor of Software Engineering – FST Errachidia
+YOUNES BOUTAHIR – Bachelor of Software Engineering – FST Errachidia
 
 
  ## License
