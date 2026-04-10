@@ -1,6 +1,8 @@
 <div align="center">
+
 ![GitHub top language](https://img.shields.io/github/languages/top/BOUTAHIR-Younes/MediConnect?style=flat-square)
 ![GitHub repo size](https://img.shields.io/github/repo-size/BOUTAHIR-Younes/MediConnect?style=flat-square)
+
 # MediConnect
 
 **Smart Hospital Management System with AI Disease Prediction**
