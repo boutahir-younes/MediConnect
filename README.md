@@ -68,6 +68,8 @@ The prediction system is built entirely from scratch — no Scikit-learn, no bla
 ---
 
 ## Project Structure
+
+```text
 MediConnect/
 ├── index.html                  # Home page
 ├── script.js
@@ -87,16 +89,17 @@ MediConnect/
 ├── planning.php
 ├── mediconnect.sql
 └── prediction/
-├── main.ipynb              # Model training
-├── server.py               # Flask API
-├── mlp_model.pkl           # Trained model
-├── encoder.pkl             # Label encoder
-├── templates/
-│   └── index.html          # Prediction UI
-└── Data/
-├── dataset.csv
-├── symptoms.json
-└── disease_labels.json
+    ├── main.ipynb              # Model training
+    ├── server.py               # Flask API
+    ├── mlp_model.pkl           # Trained model
+    ├── encoder.pkl             # Label encoder
+    ├── templates/
+    │   └── index.html          # Prediction UI
+    └── Data/
+        ├── dataset.csv
+        ├── symptoms.json
+        └── disease_labels.json
+```
 ---
 
 ## Getting Started
@@ -124,18 +127,6 @@ python server.py
 # API running at http://localhost:5000
 ```
 
----
-
-## Authors
-
-| Name | Role |
-|---|---|
-| **BOUTAHIR Younes** | Full-stack development, ML model implementation |
-| **ER-RABBANY Yassine** | Full-stack development, database design |
-
-Supervised by **Pr. EL ALLAOUI AHMAD** — FST Errachidia
-
----
 
 ## Notes
 
