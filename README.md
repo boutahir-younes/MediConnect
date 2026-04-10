@@ -74,34 +74,20 @@ The prediction system is built entirely from scratch — no Scikit-learn, no bla
 
 ```text
 MediConnect/
-├── index.html                  # Home page
-├── script.js
-├── db_connect.php
-├── login.php / logout.php
-├── dashboard-patient.php
-├── dashboard-doctor.php
-├── dashboard-admin.php
-├── patients.php / patients-admin.php
-├── medecin.php / medecins-admin.php
-├── rendezvous.php / rendezvous_traitement.php
-├── dossiers.php / dossier_traitement.php
-├── profil.php / updte_profil.php
-├── ajouter-patient.php / ajouter-medecin.php
-├── modifier-patient.php / modifier-medecin.php
-├── supprimer-medecin.php
-├── planning.php
-├── mediconnect.sql
-└── prediction/
-    ├── main.ipynb              # Model training
-    ├── server.py               # Flask API
-    ├── mlp_model.pkl           # Trained model
-    ├── encoder.pkl             # Label encoder
-    ├── templates/
-    │   └── index.html          # Prediction UI
-    └── Data/
-        ├── dataset.csv
-        ├── symptoms.json
-        └── disease_labels.json
+├── App/                        # PHP web application
+│   ├── index.html
+│   ├── dashboard-patient.php
+│   ├── dashboard-doctor.php
+│   └── ...
+├── prediction/                 # AI module
+│   ├── main.ipynb
+│   ├── server.py
+│   ├── mlp_model.pkl
+│   └── Data/
+├── sql/
+│   └── mediconnect.sql
+├── .gitignore
+└── README.md
 ```
 ---
 
