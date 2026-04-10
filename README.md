@@ -1,174 +1,150 @@
-#  MediConnect
+<div align="center">
 
-**MediConnect** is a web-based **hospital management system** that integrates an intelligent **disease prediction feature** using a manually implemented **MLP (Multi-Layer Perceptron)** model.
+# MediConnect
 
----
+**Smart Hospital Management System with AI Disease Prediction**
 
-##  Project Objectives
+[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)](https://php.net)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://mysql.com)
+[![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)](https://flask.palletsprojects.com)
+[![License](https://img.shields.io/badge/License-Academic%20PFE-blue?style=flat-square)](LICENSE)
 
-- Optimize the management of patients, doctors, appointments, and medical records.
-- Provide user-friendly interfaces for each type of user (patient, doctor, administrator).
-- Offer a public AI-powered symptom-based disease prediction tool.
+*Final Year Project (PFE) — Moulay Ismail University, FST Errachidia · 2024/2025*
 
----
-
-##  Artificial Intelligence
-
-The prediction system is based on:
-
-- A **custom MLP model** (built manually without Scikit-learn).
-- Training and preprocessing done in **Jupyter Notebook**.
-- Encoded datasets using a label encoder (`encoder.pkl`).
-- Integration with a simple HTML interface via **Flask backend** (`server.py`).
-
-The model uses a reduced dataset to predict the most likely disease based on selected symptoms.
+</div>
 
 ---
 
-##  Main Features
+## Overview
 
-### Patient
+MediConnect is a web-based hospital management system that integrates an intelligent disease prediction module. Built as a full-stack application, it covers patient management, appointment scheduling, medical records, and an AI-powered symptom-based diagnostic tool — all accessible through role-based dashboards.
+
+---
+
+## Key Features
+
+**Patient**
 - Account creation and profile management
-- Book and cancel appointments
-- Access medical records
-- Public symptom-based disease prediction (no login required)
+- Online appointment booking and cancellation
+- Access to personal medical records
+- Public disease prediction tool (no login required)
 
-###  Doctor
-- View and manage appointments
-- Access and update patient data
+**Doctor**
+- View and manage patient appointments
+- Access and update patient medical records
 - Edit personal profile
 
-###  Administrator
-- Manage all user accounts (add, update, delete doctors and patients)
-- Supervise hospital data
+**Administrator**
+- Full user account management (add, update, delete)
+- Hospital data supervision and oversight
 
 ---
 
-##  Technologies Used
+## AI — Disease Prediction Module
 
-| Category         | Technologies                                                   |
-|------------------|----------------------------------------------------------------|
-| Frontend         | HTML, CSS (inline in PHP files), basic JS                      |
-| Backend (Web)    | Procedural PHP, MySQL                                          |
-| Backend (DL)     | Python, Flask, Jupyter Notebook                                |
-| Deep Learning | Manually implemented MLP model (no Scikit-learn)               |
-| Database         | MySQL (`mediconnect.sql`)                                      |
+The prediction system is built entirely from scratch — no Scikit-learn, no black-box frameworks.
+
+- **Custom MLP model** implemented manually in Python (NumPy only)
+- **Dataset**: 133 symptoms × 41 disease classes
+- **Architecture**: Input layer → 2 hidden layers (ReLU) → Output layer (Softmax)
+- **Training**: Cross-entropy loss + gradient descent, optimized at learning rate `0.01`
+- **Final accuracy**: > 95% on test set
+- **Preprocessing**: Label encoding, binary symptom vectorization
+- **Integration**: Flask REST API consumed by the PHP frontend
+- Input (133 symptoms) → Dense(64, ReLU) → Dense(32, ReLU) → Output(41 diseases, Softmax)
+---
+
+## Tech Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | HTML, CSS, JavaScript |
+| Backend (Web) | PHP (procedural), MySQL |
+| Backend (AI) | Python, Flask, Jupyter Notebook |
+| ML Model | Custom MLP — NumPy only |
+| Database | MySQL (`mediconnect.sql`) |
 
 ---
-##  Project Structure
 
-est ce que poster tous ca : MediConnect/
-├──> ajouter-medecin.php
+## Project Structure
+MediConnect/
+├── index.html                  # Home page
+├── script.js
+├── db_connect.php
+├── login.php / logout.php
+├── dashboard-patient.php
+├── dashboard-doctor.php
+├── dashboard-admin.php
+├── patients.php / patients-admin.php
+├── medecin.php / medecins-admin.php
+├── rendezvous.php / rendezvous_traitement.php
+├── dossiers.php / dossier_traitement.php
+├── profil.php / updte_profil.php
+├── ajouter-patient.php / ajouter-medecin.php
+├── modifier-patient.php / modifier-medecin.php
+├── supprimer-medecin.php
+├── planning.php
+├── mediconnect.sql
+└── prediction/
+├── main.ipynb              # Model training
+├── server.py               # Flask API
+├── mlp_model.pkl           # Trained model
+├── encoder.pkl             # Label encoder
+├── templates/
+│   └── index.html          # Prediction UI
+└── Data/
+├── dataset.csv
+├── symptoms.json
+└── disease_labels.json
+---
 
-├──> ajouter-patient.php
+## Getting Started
 
-├──> dashboard-admin.php
+**1. Database setup**
+```bash
+mysql -u root -p < mediconnect.sql
+```
 
-├──> dashboard-doctor.php
+**2. Web app configuration**
+```php
+// Set your credentials in db_connect.php
+$host = "localhost";
+$user = "root";
+$password = "";
+$database = "mediconnect";
+```
+Then serve the project via XAMPP or WAMP at `http://localhost/MediConnect/`
 
-├──> dashboard-patient.php
-
-├──> db_connect.php
-
-├──> dossier_traitement.php
-
-├──> dossiers.php
-
-├──> medecin.php
-
-├──> login.php
-
-├──> logout.php
-
-├──> medecins-admin.php
-
-├──> modifier-medecin.php
-
-├──> modifier-patient.php
-
-├──> patients.php
-
-├──> patients-admin.php
-
-├──> planning.php
-
-├──> profil.php
-
-├──> register.php
-
-├──> rendezvous.php
-
-├──> rendezvous_traitement.php
-
-├──> supprimer-medecin.php
-
-├──> updte_profil.php
-
-├──> index.html (Home page)
-
-├──> script.js
-
-├──> 12 images used across the project
-
-├──> mediconnect.sql
-
-├──> prediction/
-
-│ ├──> main.ipynb
-
-│ ├──> server.py
-
-│ ├──> mlp_model.pkl
-
-│ ├──> encoder.pkl
-
-│ ├──> Data/
-
-│ │ ├──> dataset.csv
-
-│ │ ├──> symptoms.json
-
-│ │ └──> disease_labels.json
-
-│ └──> templates/
-
-│ └──> index.html (prediction UI)
-
-└──> README.md
-
-
-Import mediconnect.sql into your MySQL server.
-
-Set your database credentials in db_connect.php.
-
-Run the Flask server:
-
-bash
-Copy
-Edit
+**3. Start the prediction API**
+```bash
 cd prediction
+pip install flask numpy pandas
 python server.py
-Open the app in your browser:
+# API running at http://localhost:5000
+```
 
-PHP interfaces: http://localhost/MediConnect/...
-
-Prediction tool: http://localhost:5000
+---
 
 ## Authors
- 
-YOUNES BOUTAHIR – Bachelor of Software Engineering – FST Errachidia
 
+| Name | Role |
+|---|---|
+| **BOUTAHIR Younes** | Full-stack development, ML model implementation |
+| **ER-RABBANY Yassine** | Full-stack development, database design |
 
- ## License
- 
-Academic project developed as part of the Final Year Project (PFE) — Moulay Ismail University, FST Errachidia, 2025.
+Supervised by **Pr. EL ALLAOUI AHMAD** — FST Errachidia
+
+---
 
 ## Notes
- 
-CSS is written directly inside the PHP/HTML files.
 
-The system is intended to run locally using XAMPP/WAMP and Flask.
+- CSS is embedded directly in PHP/HTML files
+- The system is designed to run locally via XAMPP/WAMP + Flask
+- The prediction model can be improved with larger, clinically validated datasets
 
-The prediction model can be enhanced with richer and validated medical datasets.
+---
 
-
+<div align="center">
+<sub>Academic project — Licence Sciences et Techniques, Génie Logiciel · FST Errachidia · 2025</sub>
+</div>
